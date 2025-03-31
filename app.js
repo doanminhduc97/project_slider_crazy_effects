@@ -13,10 +13,10 @@ prevDom.onclick = function() {
 let timeRunning = 700;
 let timeAutoNext = 7000;
 let runTimeOut;
-clearTimeout(runAutoRun);
 let runAutoRun = setTimeout(() => {
   nextDom.click();
 }, timeAutoNext);
+clearTimeout(runAutoRun);
 function showSlider(type) {
   let itemSlider = document.querySelectorAll('.carousel .list .item');
   let itemThumbnail = document.querySelectorAll('.carousel .thumbnail .item');

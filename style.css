@@ -29,17 +29,19 @@ header a {
 
 .carousel {
   width: 100vw;
-  /* height: 100vw; */
+  height: 100vw;
   overflow: hidden;
   margin-top: -50px;
+  /* position: relative; */
 }
 
 .carousel .list .item {
   position: absolute;
-  top: 0;
+  /* top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0; */
+  inset: 0 0 0 0;
 }
 
 .carousel .list .item img {
@@ -119,11 +121,12 @@ header a {
 }
 
 .thumbnail .item img {
-  width: 100%;
-  width: 100%;
+  /* width: 100%;
+  width: 100%; */
   object-fit: cover;
   width: 150px;
   height: 200px;
+  border-radius: 20px;
 }
 
 .thumbnail .item .content {
