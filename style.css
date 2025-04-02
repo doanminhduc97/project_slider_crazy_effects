@@ -29,7 +29,6 @@ header a {
 
 .carousel {
   width: 100vw;
-  height: 100vw;
   overflow: hidden;
   margin-top: -50px;
   /* position: relative; */
@@ -37,10 +36,6 @@ header a {
 
 .carousel .list .item {
   position: absolute;
-  /* top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
   inset: 0 0 0 0;
 }
 
@@ -111,6 +106,7 @@ header a {
   z-index: 100;
   display: flex;
   gap: 20px;
+  overflow: hidden;
 }
 
 .thumbnail .item {
@@ -121,11 +117,11 @@ header a {
 }
 
 .thumbnail .item img {
-  /* width: 100%;
-  width: 100%; */
+  width: 100%;
+  width: 100%;
   object-fit: cover;
-  width: 150px;
-  height: 200px;
+  /* width: 150px;
+  height: 200px; */
   border-radius: 20px;
 }
 
@@ -328,10 +324,50 @@ header a {
 }
 
 @media screen and (max-width: 678px) {
+  .carousel {
+    height: 217vw;
+    position: relative;
+  }
   .carousel .list .item .content {
     padding-right: 0;
   }
   .carousel .list .item .content .title {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .thumbnail {
+    width: 358px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .thumbnail {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .thumbnail {
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 912px){
+  .thumbnail {
+    width: 456px;
+  }
+}
+
+@media screen and (max-width: 853px){
+  .thumbnail {
+    width: 418px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .thumbnail {
+    width: 640px;
   }
 }
